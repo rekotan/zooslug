@@ -1,0 +1,15 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+en:
+  layouts:
+    application:
+      footer: "By Kentaro"
+  zoo_slugs:
+    index:
+      title: "ZooSlug! Create Slugs from Text"
+      placeholder: "What needs to be ZooSlugged!?"
+      submit: "ZooSlug!"
+      copy: "Copy"
+    create:
+      copied: "Copied"

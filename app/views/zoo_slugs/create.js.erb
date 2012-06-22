@@ -1,0 +1,12 @@
+$("#last-zoo-slug").html("<%= @zoo_slug.original %>");
+$("#zoo_slug_original").val("");
+$('#copy-button').attr('disabled', false);
+$('#copy-button').css({visibility: 'visible'});
+
+clip = new ZeroClipboard.Client();
+clip.setText($('#last-zoo-slug').text());
+clip.glue('copy-button');
+clip.addEventListener('onComplete', function() {
+  $('#copy-button').text("<%= t('.copied') %>");
+  $('#copy-button').attr('disabled', true);
+});

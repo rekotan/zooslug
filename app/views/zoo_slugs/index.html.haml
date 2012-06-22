@@ -1,0 +1,6 @@
+%h1= t('.title')
+= form_for(@zoo_slug, :remote => true, :class => 'well form-inline') do |f|
+  = f.text_field :original, :class => 'span6 large', :placeholder => t('.placeholder')
+  = f.button t('.submit'), :class => 'btn btn-primary btn-large'
+  %span#copy-button.btn.btn-primary.btn-large.invisible= t('.copy')
+%h2#last-zoo-slug

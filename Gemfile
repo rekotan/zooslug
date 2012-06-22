@@ -16,6 +16,7 @@ gem 'twitter-bootstrap-rails'
 gem 'heroku'
 gem 'jquery-rails'
 gem 'haml-rails'
+gem 'zero-clipboard-rails'
 
 
 # Gems used only for assets and not required
